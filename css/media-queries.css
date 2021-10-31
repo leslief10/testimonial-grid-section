@@ -1,0 +1,151 @@
+@media only screen and (min-width: 810px) {
+  .testimonials {
+    display: grid;
+    grid-template-columns: 327px 327px;
+    grid-template-rows: 12% 250px auto 220px 405px;
+    grid-template-areas: 
+    ". ."
+    "first second"
+    "first fourth"
+    "third fourth"
+    "fifth fifth";
+    align-items: flex-start;
+    justify-items: center;
+    gap: 15px;
+    height: 100vmax;
+  }
+
+  .first-testimonial {
+    grid-area: first;
+    height: 434px;
+  }
+
+  .second-testimonial {
+    grid-area: second;
+    height: 250px;
+  }
+
+  .third-testimonial {
+    grid-area: third;
+    height: 220px;
+  }
+  
+  .fourth-testimonial {
+    grid-area: fourth;
+    height: 405px;
+  }
+
+  .fifth-testimonial {
+    grid-area: fifth;
+    width: 669px;
+    height: 280px;
+  }
+
+  .fifth-testimonial .graduate-info-container {
+      margin-left: -90px;
+  }
+}
+
+@media only screen and (min-width: 1059px) {
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 17% 255px 230px 215px;;
+    grid-template-areas:
+    ". . ." 
+    "first first second"
+    "third fourth fourth"
+    "fifth fifth fifth";
+  }
+
+  .third-testimonial, .fourth-testimonial, .fifth-testimonial {
+    position: static;
+  }
+
+  .first-testimonial {
+    grid-area: first;
+    width: 660px;
+    height: 255px;
+  }
+
+  .second-testimonial {
+    grid-area: second;
+    height: 255px;
+  }
+
+  .third-testimonial {
+    grid-area: third;
+    height: 230px;
+  }
+
+  .fourth-testimonial {
+    grid-area: fourth;
+    width: 658px;
+    height: 230px;
+  }
+
+  .fifth-testimonial {
+    grid-area: fifth;
+    width: 1001px;
+    height: 215px;
+  }
+
+  .first-testimonial .graduate-info-container, .fourth-testimonial .graduate-info-container {
+    margin-left: -90px;
+  }
+
+  .fifth-testimonial .graduate-info-container {
+    margin-left: -170px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonials {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 20% 282px 266px;
+    grid-template-areas:
+    ". . . ." 
+    "first first second fifth"
+    "third fourth fourth fifth";
+    gap: 24px 30px;
+  }
+
+  .first-testimonial {
+    grid-area: first;
+    width: 540px;
+    height: 282px;
+  }
+
+  .second-testimonial {
+    grid-area: second;
+    width: 255px;
+    height: 282px;
+  }
+
+  .third-testimonial {
+    grid-area: third;
+    width: 255px;
+    height: 266px;
+  }
+
+  .fourth-testimonial {
+    grid-area: fourth;
+    width: 540px;
+    height: 266px;
+  }
+
+  .fifth-testimonial {
+    grid-area: fifth;
+    width: 255px;
+    height: 572px;
+  }
+
+  .first-testimonial .graduate-info-container, .fourth-testimonial .graduate-info-container {
+    margin-left: -60px;
+  }
+
+  .second-testimonial .graduate-info-container, .third-testimonial .graduate-info-container, .fifth-testimonial .graduate-info-container {
+    margin-left: 14px;
+  }
+}
