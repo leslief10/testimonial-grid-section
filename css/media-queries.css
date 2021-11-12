@@ -2,7 +2,7 @@
   .testimonials {
     display: grid;
     grid-template-columns: 327px 327px;
-    grid-template-rows: 12% 250px auto 220px 405px;
+    grid-template-rows: auto 250px auto 220px 405px;
     grid-template-areas: 
     ". ."
     "first second"
@@ -12,7 +12,7 @@
     align-items: flex-start;
     justify-items: center;
     gap: 15px;
-    height: 100vmax;
+    height: 100vh;
   }
 
   .first-testimonial {
@@ -103,12 +103,13 @@
 @media only screen and (min-width: 1200px) {
   .testimonials {
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: 20% 282px 266px;
+    grid-template-rows: 0 282px 266px;
     grid-template-areas:
     ". . . ." 
     "first first second fifth"
     "third fourth fourth fifth";
     gap: 24px 30px;
+    height: 120vh;
   }
 
   .first-testimonial {
